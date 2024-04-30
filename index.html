@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVstand App</title>
+    <meta property="og:image" content="https://evstand.net/wp/wp-content/uploads/2023/01/cropped-favicon.png">
+    <link rel="icon" href="https://evstand.net/wp/wp-content/uploads/2023/01/cropped-favicon.png">
+    <!--gg font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+            <div class="navbar-brand">　</div>
+            <a  href="#">
+                <img src="https://evstand.net/wp/wp-content/themes/evstand/img/logo.svg" alt="EVstand_logo" width="150" height="28">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="https://evstand.net/wp/wp-content/themes/evstand/img/logo.svg" alt="EVstand_logo" width="120" height="24">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <div class="container-fruid">
+                        <div class="row justify-content-around text-center">
+                            <div class="col-md-3 my-3 box_info_2">
+                                <div class="col-12">
+                                    <h3>お問い合わせ</h3>
+                                    06-6430-1877 <br>
+                                    9:00〜17:00／土日祝休
+                                </div>
+                            </div>
+                            <a class="col-md-3 my-3 box_info_2" href="https://evstand.net/contact">
+                                <div class="col-12">
+                                <h3>お問い合わせフォーム</h3>
+                                <p>相談などお気軽にお問い合わせください。</p>
+                                </div>
+                            </a>
+                            <a class="col-md-3 my-3 box_info_2" href="https://evstand.net/faq">
+                                <div class="col-12">
+                                    <h3>よくある質問</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </div>
+        <header class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="carouselExample" class="carousel slide p-0" data-bs-ride="carousel">
+                        <div class="position-absolute" style="width: 100%;">
+                            <img src="./img/head-bg-01.jpg" class="img-fluid" width="100%" alt="" >
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item text-center active">
+                            <img src="./img/banner_1.png" class="image-fruid" width="80%" alt=""><br>
+                            <img src="./img/EVstand_ico.png" alt="" width="50px">
+                          </div>
+                          <div class="carousel-item text-center">
+                            <img src="./img/banner_2.png" class="image-fruid" width="80%" alt=""><br>
+                            <img src="./img/EVstand_ico.png" alt="" width="50px">
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span  aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>           
+            </div>
+        </header>
+    <!--main-->
+    <main>
+        <!--download area-->
+        <section class="container-fruid">
+            <div class="text-content content_1">
+                <article id="philosophy" style="background-image: url(./img/wind-elec.jpg); padding: 1rem 0 0 0;">
+                <div class="row inner justify-content-center">
+                    <div class="con_title py-3">
+                        <h2>アプリ</h2>
+                        <p>駐車場利用者は、無料でご利用頂けます。</p>
+                        <small>充電器のQRコードへスマホをかざすだけの簡単操作。<br>充電予約および確認。</small>
+                    </div>
+                    <div class="row px-sm-5">
+                        <div class="card border-0 mb-3" style="background-color: unset;">
+                            <div class="row align-items-center g-0">
+                              <div class="col-md-8 download_area d-flex flex-column align-items-center rounded-5">
+                                <h4>EVstand充電システムをご利用になるにはアプリのダウンロードが必要です。</h4>
+                                    <small class="text-body-secondary">アプリをダウンロードしてから使用方法をご確認ください。</small>
+                                    <hr>
+                                <h5 class="card-title">EvStand充電タカラシステム</h5>
+                                <img src="./img/EVstand_ico.png" class="border rounded-5 shadow-sm" alt="..." width="30%" height="auto">
+                                <p class="fw-medium text-success">TAKARA SERVICE Co.,Ltd</p>
+                                <div class="card-body">
+                                    <div class="download_btn row d-flex justify-content-center">
+                                        <a class="col-md-6 my-2 text-center dl_app_btn" target="_blank" href="https://apps.apple.com/jp/app/evstand%E5%85%85%E9%9B%BB%E3%82%BF%E3%82%AB%E3%83%A9%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/id6471956735"><img src="./img/app_store.png"  width="80%" height="auto" alt=""></a>
+                                        <a class="col-md-6 my-2 text-center dl_app_btn" target="_blank" href="https://play.google.com/store/apps/details?id=jp.takaraservice.evcharge"><img src="./img/google_play.png"  width="80%" height="auto" alt=""></a>
+                                    </div>
+                                    <br>
+                                  <h5 class="card-title">アプリの詳しい使用方法を確認する:</h5>
+                                  <a href="./manual/EvStand_Takara説明(20240404).pdf" target="_blank" class="btn btn-outline-secondary">マニュアル　<i class="bi bi-filetype-pdf"></i></a>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div id="carouselExampleCaptions" class="carousel slide text-center h-100">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner download_right_img" >
+                                        <div class="carousel-item download_right_bg active">
+                                            <img src="./img/anh1-01.png" class="img-fluid" alt=""> <!--download-->
+                                        </div>
+                                        <div class="carousel-item download_right_bg"> <!--map-->
+                                            <img src="./img/anh2-01.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="carousel-item download_right_bg"> <!--scan-->
+                                            <img src="./img/anh3-01.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="carousel-item download_right_bg"> <!--charge-->
+                                            <img src="./img/anh4-01.png" class="img-fluid" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                      <span aria-hidden="true"><p style="color: greenyellow;">◀</p></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                      <span aria-hidden="true"><p style="color: greenyellow;">▶</p></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--Content 2-->
+        
+        <section class="container-fruid">
+            
+            <div class="text-content content_2">
+                <div class="row inner">
+                    <div class="list_scroll_spy sticky-top">
+                        <div id="scollspy_id" class="scrollspy_style text-center">
+                            <ul class="list-group list-group-horizontal">
+                                <a class="list-group-item px-0" style="background-color: #5fff57;" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Step
+                                </a>
+                                <a class="list-group-item px-0 list_open_btn" style="background-color: #5fff57;color: white;" role="button">▶</a>
+                            </ul>
+                            <div class="collapse list-group bg-light" id="collapseExample">
+                                <a class="list-group-item" href="#simple-list-item-1">1</a>
+                                <a class="list-group-item" href="#simple-list-item-2">2</a>
+                                <a class="list-group-item" href="#simple-list-item-3">3</a>
+                                <a class="list-group-item" href="#simple-list-item-4">4</a>
+                                <a class="list-group-item" href="#simple-list-item-5">5</a>
+                                <a class="list-group-item" href="#simple-list-item-6">6</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-spy="scroll" data-bs-target="#scollspy_id" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example p-0" tabindex="0">
+                        <!--content-->
+                        <div class="htu">
+                            <div class="con_title py-3">
+                                <h2>HOW TO USE</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                        <article id="philosophy-item" class="container-content-1 px-3" >
+                            <div id="simple-list-item-1" class="ct_item item_1">
+                                <div class="img">
+                                    <img loading="lazy" src="./img/step1.jpeg" class="card-img-top" alt="...">
+                                    <span>01</span>
+                                </div>
+                                <div class="text">
+                                    <h6>Step 1</h6>
+                                    <h2>車載用充電ケーブルをつなぐ</h2>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                </div>
+                            </div>
+                            <div id="simple-list-item-2" class="ct_item item_2">
+                                <div class="img">
+                                    <img loading="lazy" src="./img/step2.png" class="card-img-top" alt="...">
+                                    <span>02</span>
+                                </div>
+                                <div class="text">
+                                    <h6>Step 2</h6>
+                                    <h2>Bluetooth接続</h2>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article id="philosophy-item" class="container-content-2 px-3">
+                            <div id="simple-list-item-3" class="ct_item item_3">
+                                <div class="img">
+                                    <img loading="lazy" src="./img/step3.png" class="card-img-top" alt="...">
+                                    <span>03</span>
+                                </div>
+                                <div class="text">
+                                    <h6>Step 3</h6>
+                                    <h2>「QRスキャン」で
+                                        QRコードを読み込む</h2>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                </div>
+                            </div>
+                            <div id="simple-list-item-4" class="ct_item item_4">
+                                <div class="img">
+                                    <img loading="lazy" src="./img/step4.png" class="card-img-top" alt="...">
+                                    <span>04</span>
+                                </div>
+                                <div class="text">
+                                    <h6>Step 4</h6>
+                                    <h2>タイマー予約</h2>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article id="philosophy-item" class="container-content-3 px-3">
+                            <div id="simple-list-item-5" class="ct_item item_5">
+                                <div class="img">
+                                    <img loading="lazy" src="./img/step5.png" class="card-img-top" alt="...">
+                                    <span>05</span>
+                                </div>
+                                <div class="text">
+                                    <h6>Step 5</h6>
+                                    <h2>充電スタート</h2>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                </div>
+                            </div>
+                            <div id="simple-list-item-6" class="ct_item item_6">
+                                <div class="img">
+                                    <img loading="lazy" src="./img/step6.png" class="card-img-top" alt="...">
+                                    <span>06</span>
+                                </div>
+                                <div class="text">
+                                    <h6>Step 6</h6>
+                                    <h2>充電終了直前に</h2>
+                                    <p>このリリースでは、EvStand はいくつかの小さなバグを修正し、アプリケーションの全体的なパフォーマンスを改善しました。 EvStand は、よりスムーズな体験をお届けできるよう、より一層努力します!</p>
+                                </div>
+                            </div>
+                        </article>
+                        <!--content-->
+                    </div>
+                    
+                </div>
+        </section>
+    </main>
+    <div class="container-fruid">
+        <div class="footer_up">
+            <div class="col-12 row justify-content-around text-center">
+                <div class="col-12 col-lg-2 my-3 p-0 mx-0 d-flex justify-content-center">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/cfd5decb-8ffe-4ca3-b7d4-58ce42ba0520/yzqZ3MxZ2t.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+                <div class="col-12 col-lg-2 my-3 box_info_2">
+                    <div class="col-12">
+                        <h3>お問い合わせ</h3>
+                        06-6430-1877 <br>
+                        9:00〜17:00／土日祝休
+                    </div>
+                </div>
+                <a class="col-12 col-lg-2 my-3 box_info_2" href="https://evstand.net/contact">
+                    <div class="col-12">
+                    <h3>お問い合わせフォーム</h3>
+                    <p>相談などお気軽にお問い合わせください。</p>
+                    </div>
+                </a>
+                <a class="col-12 col-lg-2 my-3 box_info_2" href="https://evstand.net/faq">
+                    <div class="col-12">
+                        <h3>よくある質問</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bg">
+            <div class="footer-content">
+                <div class="container-fruid p-1">
+                    <div class="row col-12">
+                        <div class="col-md-3 col-sm-6 my-2">
+                            <div class="ft-content-1">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><img src="https://evstand.net/wp/wp-content/themes/evstand/img/logo.svg" alt="" width="100%"></li>
+                                    <li class="list-group-item">
+                                        <p>〒660-0881<br>
+                                            尼崎市昭和通5丁目164番3号<br>
+                                            06-6430-1877</p>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 my-2">
+                            <div class="ft-content-2">
+                                <a class="ft-list-title" href="#">EV充電基礎知識</a><br>
+                                <ul class="sub-list list-group list-group-flush">
+                                    <a href="#" class="list-group-item">車種について</a>
+                                    <a href="#" class="list-group-item">電気自動車（EV）充電器の種類</a>
+                                    <a href="#" class="list-group-item">電気自動車（EV）充電器工事の注意点</a>
+                                    <a href="#" class="list-group-item">電気自動車（EV）充電口の位置比較</a>
+                                    <a href="#" class="list-group-item">電気自動車（EV）走行距離の比較</a>
+                                    <a href="#" class="list-group-item">プラグインハイブリッド（PHEV）バッテリー容量の比較</a>
+                                    <a href="#" class="list-group-item">電気自動車（EV）中古車を購入する際のポイント</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 my-2">
+                            <div class="ft-content-2">
+                                <a class="ft-list-title" href="#">EV補助金について</a><br><br>
+                                <a class="ft-list-title" href="#">インフラについて</a>
+                                <ul class="sub-list list-group list-group-flush">
+                                    <a href="#" class="list-group-item">全国の無料充電スポット情報</a>
+                                </ul><br>
+                                <a class="ft-list-title" href="#">充電費用</a>
+                                <ul class="sub-list list-group list-group-flush">
+                                    <a href="#" class="list-group-item">各社充電サービスの比較</a>
+                                    <a href="#" class="list-group-item">電費について</a>
+                                    <a href="#" class="list-group-item">普通充電のコスト計算</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 my-2">
+                            <div class="ft-content-2">
+                                <a class="ft-list-title" href="#">NEWS</a><br><br>
+                                <a class="ft-list-title" href="#">会社概要</a><br><br>
+                                <a class="ft-list-title" href="#">よくあるご質問</a><br><br>
+                                <a class="ft-list-title" href="#">お問い合わせフォーム</a><br><br>
+                                <a class="ft-list-title" href="#">EVstand充電システムについて</a><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="text-center pt-1 footer_bot">
+            <small>© 2024 TAKARA SERVICE</small>
+        </div>
+        
+    </footer>
+    <!--scoll top btn-->
+    <a class="position-absolute" href="#TOP">
+        <div class="btn rounded-circle btn-light btn_scoll_top" style="
+        height: 45px;
+        width: 45px;
+        align-items: center;
+        display: flex;
+        justify-content: center;">
+        Top
+        </div>
+    </a>
+    <script>
+        $('.list_open_btn').click(function (e) {
+            if ($('.list_scroll_spy').hasClass("show_list")) {
+                $('.list_scroll_spy').removeClass("show_list");
+                
+            }
+            else {
+                $('.list_scroll_spy').addClass("show_list");
+                $("#collapseExample").collapse('show');
+            }
+        });
+        // hide list collapse
+        $(document).mouseup(function(e) 
+        {
+            var container = $("#collapseExample");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) 
+            {
+                container.collapse('hide');
+            }
+        });  
+    </script>
+    <script>
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#scollspy_id'
+            })
+    </script>
+    <script>
+        var slideUp = {
+            distance: '150%',
+            origin: 'bottom',
+            opacity: null
+        };
+        //var list = document.querySelectorAll(".item_1,.item_2,.item_3,.item_4,.item_5,.item_6");
+        ScrollReveal().reveal(".item_1",{scale: 0.85,reset: true});
+        ScrollReveal().reveal(".item_2",{scale: 0.85,reset: true});
+        ScrollReveal().reveal(".item_3",{scale: 0.85,reset: true});
+        ScrollReveal().reveal(".item_4",{scale: 0.85,reset: true});
+        ScrollReveal().reveal(".item_5",{scale: 0.85,reset: true});
+        ScrollReveal().reveal(".item_6",{scale: 0.85,reset: true});
+        ScrollReveal().reveal('.list_scroll_spy',{scale: 0.85});
+    </script>
+    
+</body>
+</html>
